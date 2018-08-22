@@ -75,8 +75,8 @@ class BotRequestHandler(http.server.BaseHTTPRequestHandler):
 
 
 try:
-    SERVER = http.server.HTTPServer(('localhost', 5555), BotRequestHandler)
-    print('Started http server on localhost:5555')
+    SERVER = http.server.HTTPServer(('localhost', 3978), BotRequestHandler)
+    print('Started http server on localhost:3978')
     SERVER.serve_forever()
 except KeyboardInterrupt:
     print('^C received, shutting down server')
